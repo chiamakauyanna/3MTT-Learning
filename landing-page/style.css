@@ -38,6 +38,12 @@ body {
   height: 100vh;
 }
 
+#feature h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #cd853f;
+}
+
 #feature div {
   display: grid;
   grid-template-columns: 300px 300px 300px;
@@ -48,7 +54,7 @@ body {
 
 .feature-item {
   padding: 1rem;
-  color: darkslategray;
+  color: #cd853f;
   height: 250px;
   text-align: center;
   background-color: beige;
@@ -58,7 +64,7 @@ body {
 .feature-item h3 {
   margin: 0.8rem 0 0.8rem 0;
   text-align: left;
-  color: #cd853f;
+  color: darkslategray;
 }
 
 .feature-item p {
@@ -87,8 +93,25 @@ address svg {
 }
 
 @media screen and (max-width: 950px) {
+  #feature {
+    height: fit-content;
+    margin-bottom: 2rem;
+  }
+
   #feature div {
     grid-template-columns: 300px 300px;
+    height: fit-content;
+  }
+  .item3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+  .item3 h3 {
+    text-align: center;
+  }
+
+  .item3 p {
+    text-align: center;
   }
 }
 
@@ -101,7 +124,18 @@ address svg {
     height: 200px;
   }
   #hero {
-    max-height: 100vh;
+    height: 50vh;
+  }
+  .item3 {
+    grid-column: 1;
+    text-align: left;
+  }
+  .item3 h3 {
+    text-align: left;
+  }
+
+  .item3 p {
+    text-align: left;
   }
 }
 
