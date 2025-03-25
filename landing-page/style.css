@@ -104,17 +104,6 @@ address svg {
     grid-template-columns: 300px 300px;
     height: fit-content;
   }
-  .item3 {
-    grid-column: 1 / span 2;
-    text-align: center;
-  }
-  .item3 h3 {
-    text-align: center;
-  }
-
-  .item3 p {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -127,17 +116,6 @@ address svg {
   }
   #hero {
     height: 50vh;
-  }
-  .item3 {
-    grid-column: 1;
-    text-align: left;
-  }
-  .item3 h3 {
-    text-align: left;
-  }
-
-  .item3 p {
-    text-align: left;
   }
 }
 
