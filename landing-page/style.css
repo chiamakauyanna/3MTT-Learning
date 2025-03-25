@@ -5,18 +5,16 @@
 
 body {
   font-family: cursive;
-  background-color: #2f4f4f;
-  color: #f5f5dc;
+  background-color: darkslategrey;
+  color: beige;
 }
 
-/* Hero Section */
 #hero {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
 #hero h1 {
@@ -25,7 +23,7 @@ body {
 
 #hero p {
   padding: 1rem;
-  max-width: 600px;
+  text-align: center;
 }
 
 #hero button {
@@ -33,17 +31,9 @@ body {
   border-radius: 0.5rem;
   border: none;
   background-color: #daa520;
-  color: #2f4f4f; 
-  font-weight: bold;
-  cursor: pointer;
-  transition: background 0.3s ease;
+  font-weight: 500;
 }
 
-#hero button:hover {
-  background-color: #b8860b;
-}
-
-/* Features Section */
 #feature {
   height: 100vh;
 }
@@ -51,12 +41,12 @@ body {
 #feature h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #daa520; 
+  color: #daa520;
 }
 
 #feature div {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: 300px 300px 300px;
   gap: 1rem;
   justify-content: center;
   align-items: center;
@@ -64,45 +54,34 @@ body {
 
 .feature-item {
   padding: 1rem;
-  color: #2f4f4f; 
+  color: #daa520;
   height: 250px;
   text-align: center;
-  background-color: #f5f5dc; 
+  background-color: beige;
   border-radius: 1rem;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .feature-item h3 {
-  margin: 0.8rem 0;
-  text-align: center;
-  color: #b8860b;
+  margin: 0.8rem 0 0.8rem 0;
+  text-align: left;
+  color: #daa520;
 }
 
 .feature-item p {
-  text-align: center;
+  text-align: left;
+  color: darkslategray;
 }
 
-/* Footer */
 #footer {
-  background-color: #222;
-  color: #f5f5dc; 
+  background-color: rgb(35, 32, 32);
+  color: beige;
   padding: 1rem;
-  text-align: center;
+ text-align: center;
 }
 
 address {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
-
-address a {
-  color: #daa520;
-  text-decoration: none;
-}
-
-address a:hover {
-  text-decoration: underline;
 }
 
 address svg {
@@ -112,10 +91,9 @@ address svg {
 
 .copyright {
   margin-top: 1rem;
-  font-size: 14px;
+  text-align: center;
 }
 
-/* Responsive Design */
 @media screen and (max-width: 950px) {
   #feature {
     height: fit-content;
@@ -123,22 +101,51 @@ address svg {
   }
 
   #feature div {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: 300px 300px;
     height: fit-content;
+  }
+  .item3 {
+    grid-column: 1 / span 2;
+    text-align: center;
+  }
+  .item3 h3 {
+    text-align: center;
+  }
+
+  .item3 p {
+    text-align: center;
   }
 }
 
 @media screen and (max-width: 650px) {
   #feature div {
-    grid-template-columns: 1fr;
+    grid-template-columns: 500px;
     gap: 1.6rem;
   }
-
   .feature-item {
     height: 200px;
   }
-
   #hero {
     height: 50vh;
+  }
+  .item3 {
+    grid-column: 1;
+    text-align: left;
+  }
+  .item3 h3 {
+    text-align: left;
+  }
+
+  .item3 p {
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  #feature div {
+    grid-template-columns: 300px;
+  }
+  .feature-item {
+    height: 250px;
   }
 }
