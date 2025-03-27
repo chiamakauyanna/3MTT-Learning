@@ -18,7 +18,7 @@ body {
 }
 
 #hero h1 {
-  color: #cd853f;
+  color: #daa520;
 }
 
 #hero p {
@@ -30,7 +30,7 @@ body {
   padding: 0.6rem 1rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: #cd853f;
+  background-color: #daa520;
   font-weight: 500;
 }
 
@@ -41,7 +41,7 @@ body {
 #feature h2 {
   text-align: center;
   margin-bottom: 3rem;
-  color: #cd853f;
+  color: #daa520;
 }
 
 #feature div {
@@ -54,7 +54,7 @@ body {
 
 .feature-item {
   padding: 1rem;
-  color: #cd853f;
+  color: #daa520;
   height: 250px;
   text-align: center;
   background-color: beige;
@@ -64,17 +64,19 @@ body {
 .feature-item h3 {
   margin: 0.8rem 0 0.8rem 0;
   text-align: left;
-  color: darkslategray;
+  color: #daa520;
 }
 
 .feature-item p {
   text-align: left;
+  color: darkslategray;
 }
 
 #footer {
   background-color: rgb(35, 32, 32);
   color: beige;
   padding: 1rem;
+ text-align: center;
 }
 
 address {
@@ -102,17 +104,6 @@ address svg {
     grid-template-columns: 300px 300px;
     height: fit-content;
   }
-  .item3 {
-    grid-column: 1 / span 2;
-    text-align: center;
-  }
-  .item3 h3 {
-    text-align: center;
-  }
-
-  .item3 p {
-    text-align: center;
-  }
 }
 
 @media screen and (max-width: 650px) {
@@ -125,17 +116,6 @@ address svg {
   }
   #hero {
     height: 50vh;
-  }
-  .item3 {
-    grid-column: 1;
-    text-align: left;
-  }
-  .item3 h3 {
-    text-align: left;
-  }
-
-  .item3 p {
-    text-align: left;
   }
 }
 
