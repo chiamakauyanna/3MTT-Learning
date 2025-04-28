@@ -17,6 +17,7 @@ const App = () => {
       })
       .catch((err) => {
         setError(err);
+        setLoading(false);
       });
   };
 
@@ -29,11 +30,13 @@ const App = () => {
       {loading && <div>Loading...</div>}
       {!loading && quotes && (
         <ul>
-          <ListComponent content={quotes.content} author={quotes.author} />
+          <ListComponent quote={quotes} />
         </ul>
-    )}
-      {error && <p className="error-message">{error.message}</p>}
-      <button className="quote-button" onClick={getQuotes}>Get new quote</button>  
+      )}
+      {error && <p>Oops! Something went wrong. Please try again later.</p>}
+      <button className="quote-button" onClick={getQuotes}>
+        Get new quote
+      </button>
     </div>
   );
 };

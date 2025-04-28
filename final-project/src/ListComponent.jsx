@@ -1,8 +1,8 @@
-const ListComponent = (props) => {
+const ListComponent = ({quote}) => {
   return (
     <li className="list-item">
-      <h3 className="list-title">{props.content}</h3>
-      <p className="list-author">{props.author}</p>
+      <h3 className="list-title">{quote.content}</h3>
+      <p className="list-author">{quote.author}</p>
     </li>
   );
 };
