@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+}
+
+.quote-button {
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+/* Hover effect for the button */
+.quote-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05); 
+}
+
+/* Active state for the button */
+.quote-button:active {
+  background-color: #004085;
+  transform: scale(0.98); 
+}
+
+/* Styling for loading text */
+.loading {
+  font-size: 1.5rem;
+  color: #888;
+  font-weight: bold;
+}
+
+/* Style for the error message */
+.error-message {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+/* Reset list styles */
+li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+/* Styling for each list item */
+.list-item {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 10px auto;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+/* Hover effect for interactivity */
+.list-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Style for the title (quote) */
+.list-title {
+  color: #333;
+  margin-bottom: 25px;
+}
+
+/* Style for the author */
+.list-author {
+  font-size: 1rem;
+  color: #777;
+  font-style: italic;
+  margin-top: 5px;
+}
